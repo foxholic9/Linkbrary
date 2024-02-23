@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>회원 가입</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Acme&display=swap" rel="stylesheet">
@@ -13,19 +13,22 @@
 <body class="signin-page">
     <main>
         <a href="/"><img src="logo.png" width="210px" height="38px"></a>    
-        <span class="info"> <br>회원이 아니신가요? <a href="/signup.html">회원 가입하기</a></span>
+        <span class="info"> <br>이미 회원이신가요? <a href="/signin.html">로그인 하기</a></span>
         <form>
             <label for="signin-email">이메일</label> <br>
             <input id="signin-email" name="email" type="email"> <br>
             <label for="signin-password">비밀번호</label> <br>
-            <input id="signin-password" name="password" type="password" >
+            <input id="signin-password" name="password" type="password">
+            <label for="signin-password-repeat">비밀번호 확인</label> <br>
+            <input id="signin-password-repeat" name="password-repeat" type="password">
+            <span id="wrong-password" class="error-message">비밀번호가 일치하지 않습니다</span>
         </form>
         
-        <a href="#" class="cta-button" id="signin-button">
-            <span>로그인</span>
+        <a href="#" class="cta-button" id="signup-button">
+            <span>회원가입</span>
         </a>
         <div class="social-signup">
-            소셜 로그인
+            다른 방식으로 가입하기
             <div class="social-signin">
                 <a><img src="icons-google.png" width="42px" height="42px" id="icons-google"></a>
                 <a><img src="icons.cacaotalk.png" width="42px" height="42px"></a>
